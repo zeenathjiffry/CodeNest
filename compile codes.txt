@@ -1,0 +1,3 @@
+adb pull /sdcard/Android/data/com.example.texteditorapp/files/Temp.kt Temp.kt
+kotlinc Temp.kt -include-runtime -d Temp.jar > compile_output.txt 2>&1
+adb push compile_output.txt /sdcard/Android/data/com.example.texteditorapp/files/compile_output.txt
